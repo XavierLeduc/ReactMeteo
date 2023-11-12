@@ -12,8 +12,10 @@ import humidity_icon from '../../Assets/humidity.png';
 
 const WeatherApp = () => {
     return (
-        <div>
-
+        <div className='container'>
+            <div className="top-bar">
+                <input type="text" className="cityInput" />
+            </div>
         </div>
     );
 };
