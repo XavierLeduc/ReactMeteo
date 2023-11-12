@@ -12,7 +12,7 @@ import humidity_icon from '../Assets/humidity.png';
 
 const WeatherApp = () => {
 
-    let api_key = "dd94f859a0e52d6e4767fddf735f04a7";
+    let api_key = "779d654b6c9f6580a93d4bdec18a9de2";
 
     const search = async () => {
         const element = document.getElementsByClassName('cityInput');
@@ -31,6 +31,9 @@ const WeatherApp = () => {
         const location = document.getElementsByClassName('weather-location');
 
         humidity[0].innerHTML = data.main.humidity + "%";
+        wind[0].innerHTML = data.wind.speed + " km/h";
+        temperature[0].innerHTML = data.main.temp;
+        location[0].innerHTML = data.name;
     }
 
 
